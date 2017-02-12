@@ -1,0 +1,26 @@
+{
+	"folders":
+	[
+		{
+            "folder_exclude_patterns":
+            [
+                "node_modules",
+                "build",
+                "dist",
+                "test/unit/coverage"
+            ],
+			"path": "."
+		}
+	],
+	"SublimeLinter":
+    {
+        "linters": {
+            "jshint": {
+                "@disable": true
+            },
+            "eslint": {
+                "@disable": false
+            }
+        }
+    }
+}

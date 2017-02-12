@@ -1,0 +1,14 @@
+{
+  "env": {
+    "mocha": true
+  },
+  "globals": {
+    "expect": true,
+    "sinon": true,
+    "assert": true
+  },
+  "rules": {
+    "no-native-reassign": ["error", {"exceptions": ["Promise"]}],
+    "no-global-assign": ["error", {"exceptions": ["Promise"]}]
+  }
+}
