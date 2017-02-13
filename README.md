@@ -83,3 +83,10 @@ npm run build
 ```
 
 This application was build from the VueJS webpack template. For detailed explanation on how things work, checkout the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
+
+<!---
+Usefull stuff:
+
+Update gh-pages
+git subtree push --prefix dist origin gh-pages
+-->
