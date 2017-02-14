@@ -50,10 +50,14 @@ export default {
   },
   methods: {
     inputContent (event) {
-      this.editContent(event.target.value)
+      this.$nextTick(() => {
+        this.editContent(event.target.value)
+      })
     },
     carretMoved (event) {
-      file.moveCursor(event.target.selectionStart)
+      this.$nextTick(() => {
+        file.moveCursor(event.target.selectionStart)
+      })
     },
     ...mapActions([
       'editContent'
@@ -71,13 +75,17 @@ export default {
 
   div.textarea-container {
     height:100%;
+    margin: 0;
+    padding: 8px;
   }
 
   textarea {
     background: white;
     width: 100%;
     height: 100%;
-    position: absolute;
+    position: relative;
+    box-sizing: border-box;
+    padding: 8px;
 
     resize: none;
     border: 1px solid $primary-color;

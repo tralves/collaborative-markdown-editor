@@ -7,9 +7,8 @@
       <div class="page-content">
 
         <div class="mdl-grid">
-          <div class="mdl-cell mdl-cell--8-col mdl-cell--2-offset-desktop" id="text-view">
-            <text-view></text-view>
-          </div>
+          <text-view class="mdl-cell mdl-cell--6-col"></text-view>
+          <preview-view class="mdl-cell mdl-cell--6-col"></preview-view>
         </div>
 
         <mdl-dialog ref="login" full-width title="Hi there">
@@ -38,6 +37,7 @@ import PageHeader from './components/menu/PageHeader'
 import SideMenu from './components/menu/SideMenu'
 import CreateNewFileDialog from './components/CreateNewFileDialog'
 import TextView from './components/TextView'
+import PreviewView from './components/PreviewView'
 import ProfileMenu from './components/menu/ProfileMenu'
 import GapiIntegration from './gapi/gapi-integration'
 import { file } from 'src/services'
@@ -46,6 +46,7 @@ export default {
   components: {
     PageHeader,
     TextView,
+    PreviewView,
     ProfileMenu,
     SideMenu,
     'create-new-file-dialog': CreateNewFileDialog

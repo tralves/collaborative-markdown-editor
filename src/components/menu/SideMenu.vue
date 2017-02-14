@@ -14,6 +14,13 @@
         <a class="mdl-navigation__link" id="share-button" @click="openShare()">
           <i class="material-icons">share</i> Share...
         </a>
+        <hr/>
+        <a class="mdl-navigation__link" href="https://github.com/tralves/collaborative-markdown-editor" target="_blank">
+          <i class="material-icons">code</i> github
+        </a>
+        <a class="mdl-navigation__link" href="mailto:tralves@gmail.com">
+          <i class="material-icons">email</i> tralves@gmail.com
+        </a>
       </nav>
     </div>
 </template>

@@ -1,5 +1,5 @@
 <template>
-  <div :style="{top: cursor.position.top + 'px', left: cursor.position.left +'px'}">
+  <div class="carret-holder" :style="{top: cursor.position.top + 'px', left: cursor.position.left +'px'}">
     <mdl-tooltip :target="'carret'+cursor.sessionId">
       {{ cursor.collaboratorName }}
     </mdl-tooltip>
@@ -15,6 +15,10 @@
 </script>
 
 <style scoped>
+  .carret-holder {
+    position: absolute;
+    margin: 8px;
+  }
   .carret {
     position: absolute;
     width: 2px;
